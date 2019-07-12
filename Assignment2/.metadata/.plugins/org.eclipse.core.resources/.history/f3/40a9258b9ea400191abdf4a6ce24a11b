@@ -1,0 +1,26 @@
+package question2;
+import java.util.Scanner;
+import java.util.*;
+import java.io.*;
+public class MainJobScheduler {
+
+	public static void main(String[] args) {
+		Scanner inputObject = new Scanner(System.in);
+		JobScheduler jobSchedulerObj = new JobScheduler();
+		System.out.println("How many Process do You Want ");
+		int numberOfProcess = inputObject.nextInt();
+		int arrOfTime[][] = new int[numberOfProcess][2];
+		System.out.println("Enter time in format Arrival time: Burst time :");
+		
+		for(int i=0;i<numberOfProcess;i++){  // Collecting time of process in Seconds
+			for(int j=0;j<2;j++){
+				arrOfTime[i][j] = inputObject.nextInt();
+			}
+		}
+		jobSchedulerObj.jobScheduling(arrOfTime);
+		jobSchedulerObj.allTypeTimeOfAllProcess();
+		
+
+	}
+
+}
