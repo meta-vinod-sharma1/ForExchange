@@ -1,0 +1,22 @@
+
+
+// https://docs.google.com/document/preview?hgd=1&id=10-weu3jlJm-GrC5MSd0xaiIRrkLn3n30mgS2qFM7IrA
+
+package question1;
+import java.util.Scanner;
+public class main {
+
+	public static void main(String[] args) {
+		
+		Scanner userInputObject = new Scanner(System.in);
+		String firstNumber,secondNumber;
+		
+		System.out.println("Please Enter First Number");
+		firstNumber = userInputObject.nextLine();
+		System.out.println("Please Enter Second Number");
+		secondNumber = userInputObject.nextLine();
+		
+		
+	}
+
+}

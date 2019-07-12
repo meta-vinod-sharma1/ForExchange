@@ -1,0 +1,33 @@
+package question1;
+
+public class HexCalc {
+	String addNumbers(String firstNumber, String secondNumber){
+		return "will";
+	}
+	
+	String subNumbers(String firstNumber, String secondNumber){
+		return "will";
+	}
+	
+	String mulNumbers(String firstNumber, String secondNumber){
+		return "will";
+	}
+	
+	String divNumbers(String firstNumber, String secondNumber){
+		return "will";
+	}
+	
+	String isEqual(String firstNumber, String secondNumber){
+		return "will";
+	}
+	
+	String isGreater(String firstNumber, String secondNumber){
+		return "will";
+	}
+	
+	String isLess(String firstNumber, String secondNumber){
+		return "will";
+	}
+	
+	
+}

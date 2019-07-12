@@ -1,0 +1,17 @@
+
+
+// https://docs.google.com/document/preview?hgd=1&id=10-weu3jlJm-GrC5MSd0xaiIRrkLn3n30mgS2qFM7IrA
+
+package question1;
+import java.io.*;
+import java.util.Scanner;
+public class Main {
+
+	public static void main(String[] args) {
+		
+		
+
+		
+	}
+
+}

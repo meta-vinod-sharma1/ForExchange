@@ -1,0 +1,12 @@
+package question1;
+import java.io.*;
+public class ConvertNumber {
+	int hexToDecimal(String number){
+		int decimalNumber;
+		
+		return decimalNumber;
+	}
+	String decimalToHex(int number){
+		return "";
+	}
+}

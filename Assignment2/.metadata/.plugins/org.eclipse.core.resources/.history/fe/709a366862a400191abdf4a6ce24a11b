@@ -1,0 +1,70 @@
+
+
+// https://docs.google.com/document/preview?hgd=1&id=10-weu3jlJm-GrC5MSd0xaiIRrkLn3n30mgS2qFM7IrA
+
+package question1;
+import java.io.*;
+import java.util.Scanner;
+public class main {
+
+	public static void main(String[] args) {
+		
+		Scanner userInputObject = new Scanner(System.in);
+		String firstNumber,secondNumber;
+		
+		System.out.println("Please Enter First Number");
+		firstNumber = userInputObject.nextLine();
+		System.out.println("Please Enter Second Number");
+		secondNumber = userInputObject.nextLine();
+		HexCalc hexCalcObject = new HexCalc();
+		int choice;
+	/*	do{
+			System.out.println("Please Enter your choice");
+			System.out.println("1-> ADD");
+			System.out.println("2-> SUB");
+			System.out.println("3-> MUL");
+			System.out.println("4-> DIV");
+			System.out.println("5-> Is FirstNumber is equal to second Number?");
+			System.out.println("6-> Is FirstNumber is Greater than the second Number?");
+			System.out.println("7-> Is FirstNumber is Less than the second Number?");
+			System.out.println("8->Exit");
+			choice = userInputObject.nextInt();
+			switch(choice){
+			case 1:
+				hexCalcObject.addNumbers(firstNumber,secondNumber);
+				break;
+			case 2:
+				hexCalcObject.subNumbers(firstNumber,secondNumber);
+				break;
+			case 3:
+				hexCalcObject.mulNumbers(firstNumber,secondNumber);
+				break;
+			case 4:
+				hexCalcObject.divNumbers(firstNumber,secondNumber);
+				break;
+			case 5:
+				hexCalcObject.isEqual(firstNumber,secondNumber);
+				break;
+			case 6:
+				hexCalcObject.isGreater(firstNumber,secondNumber);
+				break;
+			case 7:
+				hexCalcObject.isLess(firstNumber,secondNumber);
+				break;
+			
+			default :
+				System.out.println("!!! Invalid Choice");
+			}
+				
+		}while(choice!=8);*/
+		
+		ConvertNumber c = new ConvertNumber();
+		System.out.println("decimal to hexa value 11 : " + c.decimalToHex(220));
+		System.out.println("decimal to hexa value 12 : " + c.decimalToHex(221));
+		System.out.println("decimal to hexa value 25 : " + c.decimalToHex(222));
+		System.out.println("decimal to hexa value 13 : " + c.decimalToHex(16));
+		
+		
+	}
+
+}

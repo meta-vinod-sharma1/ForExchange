@@ -1,0 +1,38 @@
+package question1;
+import java.io.*;
+public class ConvertNumber {
+	int hexToDecimal(String number){
+		int numberLength = number.length();
+		int base = 1;
+		int decimalNumber=0;
+		
+		for(int i=number.length()-1;i>=0;i++){
+			if(number.charAt(i)>='0' && number.charAt(i)<='9'){
+				decimalNumber = decimalNumber + (number.charAt(i)-48)*base;
+				base = base*16;
+			}else{
+				decimalNumber = decimalNumber + (number.charAt(i)-55)*base;
+				base = base*16;
+			}
+		}
+		return decimalNumber;	
+	}
+	
+	
+	String decimalToHex(int number){
+		String hexNumber="";
+		char charOfNumber;
+		int reminder;
+		while(number>0){
+			reminder = number%16;
+			if(reminder>9){
+				charOfNumber = (char)(reminder + 55);
+			}else{
+				charOfNumber = (char)(reminder + 48);
+			}
+			hexNumber += charOfNumber;
+			
+		}
+		return hexNumber;
+	}
+}
